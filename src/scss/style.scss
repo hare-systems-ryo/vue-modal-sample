@@ -1,0 +1,64 @@
+html {
+  width: 100%;
+}
+
+:root {
+  //app設定
+  --AppBackColor: #f2f8ff;
+  --AppForeColor: #222;
+
+  @media (prefers-color-scheme: dark) {
+    --AppBackColor: #6b7988;
+    --AppForeColor: #222;
+  }
+}
+
+html.light {
+  --AppBackColor: #f2f8ff;
+  --AppForeColor: #222;
+}
+
+html.dark {
+  --AppBackColor: #6b7988;
+  --AppForeColor: #222;
+}
+
+
+
+body {
+  background-color: var(--AppBackColor) !important;
+  color           : var(--AppForeColor) !important;
+  font-family     : source-han-sans-japanese, sans-serif;
+  font-weight     : 400;
+  font-style      : normal;
+  font-size       : 16px;
+}
+
+
+body {
+  width     : 100%;
+  min-height: 100vh;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+* {
+  margin  : 0px;
+  padding : 0px;
+  position: relative;
+}
+
+#app {
+  z-index   : 0;
+  width     : 100%;
+  min-height: 100%;
+}
+
+#teleport {
+  z-index : 1;
+  position: fixed;
+  top     : 0;
+  left    : 0;
+  width   : 0;
+  height  : 0;
+}
