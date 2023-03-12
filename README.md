@@ -4,7 +4,8 @@ Vue3.2 で Modal を作るときのサンプル
 
 # Note
 
-詳しくば別に説明を設ける（予定）
+説明はこちらにて
+https://qiita.com/harenokuni/items/cc2dbf6fbaecfdc5f730
 
 # Demo
 
